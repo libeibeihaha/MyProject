@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide,
+.swiper-slide-1,
+.swiper-side-n,
+.swiper-slide-1 img,
+.swiper-slide-n img {
+    width: 100%;
+    height: 100%;
+    background-color: #ECECEC;
+}
+/*第一页的样式*/
+.template-eveCanvas{
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+}
+/*首页显示时间样式*/
+.template-date{
+  position:relative;
+  color:#F5F5F5;
+  top:0.875rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+}
+.template-time{
+  font-weight: lighter;
+  font-size:4rem;
+}
+.template-date-week{
+  font-size:1rem;
+}
+.template-notice{
+  position:relative;
+  color:#F5F5F5;
+  left:5%;
+}
+.devide{
+  position:relative;
+  border:1px solid #43454F;
+  /*height:0.125rem;*/
+  width:90%;
+  margin-bottom: 0.625rem;
+  /*background-color:#F5F5F5;*/
+
+}
+.template-notice-1 ,
+.template-notice-2{
+  position:relative;
+  margin-bottom: 1.25rem;
+}
+.wechat-logo{
+  width:1.3rem;
+  height:1.3rem;
+  vertical-align: top;
+  display: inline-block;
+}
+.wechat-logo img{
+  border: 0 solid #fff;
+  border-radius: 0.32rem;
+}
+.notice-1,.notice-2{
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.weixin{
+  font-size:1rem;
+  font-weight: lighter;
+  color:#B5B5BA;
+  padding-right: 0.3rem;
+
+}
+.tips{
+   font-size: 0.8rem;
+    color: #565962;
+}
+.current-notice{
+  font-size: 1.1rem;
+}
+/*动态添加页面的样式*/
+.block{
+  width:100%;
+  padding:0.25rem 0rem 0.25rem 0rem;
+  /*clear:both;*/
+  overflow: hidden;
+}
+.block:first-child{
+  margin-top:2rem;
+}
+.template-user-dialog-left{
+  display: block;
+  float:left;
+  clear:left;
+}
+.template-user-dialog-right{
+  display: block;
+  float:right;
+  clear:right;
+}
+.template-user-dialog-left .user{
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    float:left;
+    margin: 0 0.25rem 0 0.75rem;
+}
+.template-user-dialog-right .user
+{
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    float:right;
+    margin: 0 0.75rem 0 0.25rem;
+}
+.user-image { 
+    width: 100%;
+    height: 100%;
+}
+.dialog{
+  max-width: 12.5rem;
+   width:auto;
+   height:auto;
+   display: inline-block;
+}
+.triangle-left{
+  position:absolute;
+    height:2rem;
+
+}
+.triangle-left img
+{
+  width:0.5rem;
+  height:0.5rem;
+  padding-top: 0.7rem;
+}
+.triangle-right{
+    
+    height:2rem;
+    float: right;
+}
+.triangle-right img
+{
+  width:0.5rem;
+  height:0.5rem;
+  padding-top: 0.7rem;
+}
+.template-user-dialog-left .message
+{
+    background-color:#fefefe;
+    border:0.0625rem solid #e0e0e0;
+    font-size:0.8rem;
+    text-align: left;
+    border-radius: 0.18rem;
+    line-height: 1rem;
+    padding:0.5rem 0.5rem;
+    margin-left:0.45rem;
+}
+.template-user-dialog-right .message
+{
+    border: 0.0625rem solid rgb(176, 227, 120);
+    background-color: rgb(178, 232, 102);
+    font-size:0.8rem;
+    text-align: left;
+    border-radius: 0.18rem;
+    line-height: 1rem;
+    padding:0.5rem 0.5rem;
+    margin-right:0.45rem;
+}
+.message-img
+{
+  width:4rem;
+  height:4rem;
+}
+
+/*最后一页*/
+
+.template-title {
+    color: #FFFFFF;
+    font-size: 0.813rem;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
+.template-code {
+    width: 100%;
+    height: 100%;
+}
+.title-box{
+    // border: 2px solid red;
+    width: 50%;
+    height: 28%;
+    margin-left: 25%;
+    position: relative;
+}
+.title-box img {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.template-left,
+.template-top,
+.template-right,
+.template-bottom {
+    position: absolute;
+    border: 0.08rem solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.template-left {
+    width: 1%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    
+}
+
+.template-top {
+    width: 100%;
+    height: 0.6%;
+    left: 0;
+    top: 0;
+  
+}
+
+.template-right {
+    width: 1%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+}
+
+.template-bottom {
+    width: 100%;
+    height: 0.6%;
+    left: 0;
+    top: 100%;
+}
+.footer
+{
+  position:absolute;
+  display: none;
+  z-index: 999;
+  width:100%;
+  height:7%;
+  bottom:0;
+}
+.footer img
+{
+  width:100%;
+  height:100%;
+}
+.arrow
+{
+    position:absolute;
+    z-index: 1000;
+    width:12%;
+    height:6%;
+    left:0;
+    right:0;
+    margin:0 auto;
+    bottom: 3%;
+    -moz-animation: arrow_animation 1000ms ease 0ms infinite alternate ;
+    -webkit-animation: arrow_animation 1000ms ease 0ms infinite alternate ;
+    -o-animation: arrow_animation 1000ms ease 0ms infinite alternate ;
+    animation: arrow_animation 1000ms ease 0ms infinite alternate ;
+
+}
+@keyframes arrow_animation
+{
+  0%{
+   transform: translate(0,-100%);
+-ms-transform: translate(0,-100%);   /* IE 9 */
+-webkit-transform: translate(0,-100%); /* Safari and Chrome */
+-o-transform: translate(0,-100%);    /* Opera */
+-moz-transform: translate(0,-100%);    /* Firefox */
+  }
+  100%{
+    transform: translate(0,0);
+    -ms-transform: translate(0,0);   /* IE 9 */
+-webkit-transform: translate(0,0); /* Safari and Chrome */
+-o-transform: translate(0,0);    /* Opera */
+-moz-transform: translate(0,0);    /* Firefox */
+  }
+
+@-moz-keyframes arrow_animation
+{
+  0%{
+   transform: translate(0,-100%);
+-ms-transform: translate(0,-100%);   /* IE 9 */
+-webkit-transform: translate(0,-100%); /* Safari and Chrome */
+-o-transform: translate(0,-100%);    /* Opera */
+-moz-transform: translate(0,-100%);    /* Firefox */
+  }
+  100%{
+    transform: translate(0,0);
+    -ms-transform: translate(0,0);   /* IE 9 */
+-webkit-transform: translate(0,0); /* Safari and Chrome */
+-o-transform: translate(0,0);    /* Opera */
+-moz-transform: translate(0,0);    /* Firefox */
+  }
+}
+@-webkit-keyframes arrow_animation
+{
+  0%{
+   transform: translate(0,-100%);
+-ms-transform: translate(0,-100%);   /* IE 9 */
+-webkit-transform: translate(0,-100%); /* Safari and Chrome */
+-o-transform: translate(0,-100%);    /* Opera */
+-moz-transform: translate(0,-100%);    /* Firefox */
+  }
+  100%{
+    transform: translate(0,0);
+    -ms-transform: translate(0,0);   /* IE 9 */
+-webkit-transform: translate(0,0); /* Safari and Chrome */
+-o-transform: translate(0,0);    /* Opera */
+-moz-transform: translate(0,0);    /* Firefox */
+  }
+}
+@-o-keyframes arrow_animation
+{
+  0%{
+   transform: translate(0,-100%);
+-ms-transform: translate(0,-100%);   /* IE 9 */
+-webkit-transform: translate(0,-100%); /* Safari and Chrome */
+-o-transform: translate(0,-100%);    /* Opera */
+-moz-transform: translate(0,-100%);    /* Firefox */
+  }
+  100%{
+    transform: translate(0,0);
+    -ms-transform: translate(0,0);   /* IE 9 */
+-webkit-transform: translate(0,0); /* Safari and Chrome */
+-o-transform: translate(0,0);    /* Opera */
+-moz-transform: translate(0,0);    /* Firefox */
+  }
+}

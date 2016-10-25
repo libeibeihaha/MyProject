@@ -1,0 +1,29 @@
+// 模板字段配置文件
+// 格式参照相关文档
+[
+    { "name": "title", "title": "标题", "require": "1", "readonly": "0", "hide": "0", "value": "", "type": "text" },
+    { "name": "digest", "title": "描述", "require": "1", "readonly": "0", "hide": "0", "value": "", "type": "text" },
+    { "name": "thumb_media_url", "title": "封面图", "require": "1", "readonly": "0", "hide": "0", "value": "", "type": "image", "placeholder": "建议：900 x 500" },
+    { "name": "seller", "title": "商家图像", "require": "1", "readonly": "0", "hide": "0", "value": "", "type": "image" },
+    { "name": "customer", "title": "客户图像", "require": "1", "readonly": "0", "hide": "0", "value": "", "type": "image" },
+
+    {
+        "name": "message_records",
+        "title": "消息记录",
+        "require": "1",
+        "readonly": "0",
+        "hide": "0",
+        "type": "list",
+        "itemName": "消息",
+        "items": [
+            { "name": "seller_message_text", "title": "商家消息_文字", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "text" },
+            { "name": "seller_message_text_url", "title": "商家消息_文字的链接", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "url" },
+            { "name": "seller_message_image", "title": "商家消息_图片", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "image" },
+            { "name": "seller_message_image_url", "title": "商家消息_图片的链接", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "url" },
+            { "name": "customer_message_text", "title": "客户消息_文字", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "text" },
+            { "name": "customer_message_text_url", "title": "客户消息_文字的链接", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "url" },
+            { "name": "customer_message_image", "title": "客户消息_图片", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "image" },
+            { "name": "customer_message_image_url", "title": "客户消息_图片的链接", "require": "0", "readonly": "0", "hide": "0", "value": "", "type": "url" }
+        ]
+    }
+]

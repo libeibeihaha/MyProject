@@ -1,0 +1,26 @@
+{
+    "seller": "images/user1.png ",
+    "customer": "images/user2.png ",
+    "message_records": [
+    { 
+    	"seller_message_text": "在吗？ 有件重要的事对你说！ 看到消息请回复。 谢谢 ", 
+    	"seller_message_text_url": "", 
+    	"seller_message_image": "", 
+    	"seller_message_image_url": "", 
+    	"customer_message_text": "什么事？ ", 
+    	"customer_message_text_url": "", 
+    	"customer_message_image": "", 
+    	"customer_message_image_url": "" 
+    }, 
+    { 
+    	"seller_message_text": "你有听说过某某活动吗？ ", 
+    	"seller_message_text_url": "", 
+    	"seller_message_image": "", 
+    	"seller_message_image_url": "", 
+    	"customer_message_text": "没有诶， 某某活动是什么？ ", 
+    	"customer_message_text_url": "", 
+    	"customer_message_image": "", 
+    	"customer_message_image_url": "" 
+    }],
+    "weixin_ori_id":"gh_4a0a01ec1f3b"
+}
